@@ -1,0 +1,157 @@
+/* คุมโทนสีพื้นหลัง ขาว-เหลืองพาสเทลตามใจครูกิ่ง */
+body {
+    background-color: #fefbe9; /* สีครีมเหลืองนวลพาสเทล สบายตา */
+    color: #4a4a4a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* จัดก้อนเนื้อหาให้อยู่ตรงกลางหน้าจอ ไม่จิ้ดริ้ด ไม่กว้างเกินไป */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* 👤 ตกแต่งส่วนแนะนำตัวด้านบน */
+.profile-section {
+    background-color: #ffffff; /* กล่องสีขาวตัดกับพื้นหลังเหลือง */
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 8px 24px rgba(229, 220, 172, 0.5); /* เงาสีเหลืองหม่นละมุน */
+    margin-bottom: 40px;
+}
+
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%; /* รูปวงกลม */
+    object-fit: cover;
+    border: 4px solid #fff2cc; /* ขอบสีเหลืองอ่อน */
+}
+
+.profile-info h1 {
+    margin: 0 0 10px 0;
+    color: #d4a373; /* สีน้ำตาลทองอบอุ่น */
+}
+
+/* 📦 จัดเซกชันสไตล์ Bento Box */
+.bento-section {
+    margin-bottom: 40px;
+}
+
+.bento-section h2 {
+    color: #dba159;
+    margin-bottom: 20px;
+    border-left: 5px solid #ffeb3b;
+    padding-left: 10px;
+}
+
+/* ระบบ Grid สำหรับอนิเมะ */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* การ์ด Bento สไตล์กล่องข้าวญี่ปุ่น */
+.bento-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+    transition: transform 0.2s;
+}
+
+.bento-card:hover {
+    transform: translateY(-5px); /* เวลาเมาส์ชี้แล้วการ์ดลอยขึ้นเบาๆ */
+}
+
+/* ทำให้อันดับ 1 ตัวใหญ่กว่าเพื่อนแบบใน Layout ต้นฉบับ */
+.card-rank1 {
+    grid-column: span 2;
+    background-color: #fffde7; /* ไฮไลต์เหลืองอ่อนพิเศษให้อันดับ 1 */
+    border: 2px solid #fff59d;
+}
+
+.bento-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+/* ป้ายแสดงตัวเลขอันดับ */
+.rank-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #ffe082;
+    color: #5d4037;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* 🎧 ระบบ Grid สำหรับเพลง (กล่องยาวแนวนอนสไตล์การ์ด) */
+.bento-grid-songs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.song-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+/* คุมกรอบวิดีโอ YouTube ไม่ให้เบี้ยว */
+.video-container {
+    width: 200px;
+    height: 110px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.song-rank {
+    position: static;
+    background-color: #fff59d;
+}
+
+/* ปุ่มกดสไตล์มินิมอลเข้ากับเว็บ */
+button {
+    display: block;
+    margin: 30px auto 0 auto;
+    background-color: #ffe082;
+    color: #5d4037;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255, 224, 130, 0.4);
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #ffd54f;
+}
