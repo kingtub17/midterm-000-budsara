@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Midterm Project</title>
+    <!-- ลิงก์เชื่อมไปหาไฟล์ CSS ที่เรากำลังจะสร้างถัดไป -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- 👤 ส่วนที่ 1: แนะนำเจ้าของเว็บ (Profile Header) -->
+        <header class="profile-section">
+            <!-- แก้เป็น profileme.jpg ตามรูปจริงของครูแล้วค่ะ -->
+            <img src="profileme.jpg" alt="รูปของฉัน" class="profile-img">
+            <div class="profile-info">
+                <h1>ครูกิ่ง สุดปัง</h1>
+                <p><strong>ชื่อเล่น:</strong> กิ่ง</p>
+                <p class="bio">ยินดีต้อนรับสู่เว็บมิดเทอมรวมสิ่งที่ฉันรัก ปวช.3 สายไอทีลุยเลย!</p>
+            </div>
+        </header>
+
+        <!-- 🎬 ส่วนที่ 2: Top 5 อนิเมะที่ชอบที่สุด -->
+        <section class="bento-section">
+            <h2>🎬 My Top 5 Favorite Anime</h2>
+            <div class="bento-grid">
+                
+                <!-- อันดับ 1 (ใช้ชื่อแบบมีเว้นวรรค anime 1.jpg ตามรูปจริงของครูแล้วค่ะ) -->
+                <div class="bento-card card-rank1">
+                    <span class="rank-tag">#1</span>
+                    <img src="anime 1.jpg" alt="Anime 1">
+                    <h3>ชื่อเรื่องอันดับ 1</h3>
+                    <p>เรื่องนี้คือที่สุดในใจเพราะ...</p>
+                </div>
+
+                <!-- อันดับ 2 -->
+                <div class="bento-card">
+                    <span class="rank-tag">#2</span>
+                    <img src="anime 2.jpg" alt="Anime 2">
+                    <h3>ชื่อเรื่องอันดับ 2</h3>
+                    <p>สนุกมาก หักมุมสุด ๆ</p>
+                </div>
+
+                <!-- อันดับ 3 -->
+                <div class="bento-card">
+                    <span class="rank-tag">#3</span>
+                    <img src="anime 3.jpg" alt="Anime 3">
+                    <h3>ชื่อเรื่องอันดับ 3</h3>
+                    <p>งานภาพอลังการดาวล้านดวง</p>
+                </div>
+
+                <!-- อันดับ 4 -->
+                <div class="bento-card">
+                    <span class="rank-tag">#4</span>
+                    <img src="anime 4.jpg" alt="Anime 4">
+                    <h3>ชื่อเรื่องอันดับ 4</h3>
+                    <p>ซึ้งกินใจ น้ำตาไหลพราก</p>
+                </div>
+
+                <!-- อันดับ 5 -->
+                <div class="bento-card">
+                    <span class="rank-tag">#5</span>
+                    <img src="anime 5.jpg" alt="Anime 5">
+                    <h3>ชื่อเรื่องอันดับ 5</h3>
+                    <p>ตลกคลายเครียด ดูได้เรื่อย ๆ</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 🎧 ส่วนที่ 3: Top 5 เพลงโปรด (ฝังวิดีโอ YouTube) -->
+        <section class="bento-section">
+            <h2>🎧 My Top 5 Favorite Songs</h2>
+            <div class="bento-grid-songs">
+                
+                <!-- เพลงอันดับ 1 (เปลี่ยนโค้ด Embed ตรง <iframe> ได้เลยค่ะ) -->
+                <div class="song-card">
+                    <span class="rank-tag song-rank">#1</span>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h4>ชื่อเพลงอันดับ 1</h4>
+                </div>
+
+                <!-- เพลงอันดับ 2 -->
+                <div class="song-card">
+                    <span class="rank-tag song-rank">#2</span>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h4>ชื่อเพลงอันดับ 2</h4>
+                </div>
+
+                <!-- เพลงอันดับ 3 -->
+                <div class="song-card">
+                    <span class="rank-tag song-rank">#3</span>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h4>ชื่อเพลงอันดับ 3</h4>
+                </div>
+
+                <!-- เพลงอันดับ 4 -->
+                <div class="song-card">
+                    <span class="rank-tag song-rank">#4</span>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h4>ชื่อเพลงอันดับ 4</h4>
+                </div>
+
+                <!-- เพลงอันดับ 5 -->
+                <div class="song-card">
+                    <span class="rank-tag song-rank">#5</span>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h4>ชื่อเพลงอันดับ 5</h4>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ปุ่มสำหรับ JavaScript -->
+        <button id="alertBtn">✨ ทักทายคุณครูกิ่ง ✨</button>
+
+    </div>
+
+    <!-- ลิงก์เชื่อมไปหาไฟล์ JS ที่เราจะสร้างเป็นไฟล์ที่สาม -->
+    <script src="script.js"></script>
+</body>
+</html>
