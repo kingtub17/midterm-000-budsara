@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Midterm Project</title>
-    <!-- ลิงก์เชื่อมไปหาไฟล์ CSS ที่เรากำลังจะสร้างถัดไป -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
         
-        <!-- 👤 ส่วนที่ 1: แนะนำเจ้าของเว็บ (Profile Header) -->
         <header class="profile-section">
-            <!-- แก้เป็น profileme.jpg ตามรูปจริงของครูแล้วค่ะ -->
             <img src="profileme.jpg" alt="รูปของฉัน" class="profile-img">
             <div class="profile-info">
                 <h1>บุษราภรณ์ ทัพธานี</h1>
@@ -22,12 +19,10 @@
             </div>
         </header>
 
-        <!-- 🎬 ส่วนที่ 2: Top 5 อนิเมะที่ชอบที่สุด -->
         <section class="bento-section">
             <h2>🎬 My Top 5 Favorite Anime</h2>
             <div class="bento-grid">
                 
-                <!-- อันดับ 1 (ใช้ชื่อแบบมีเว้นวรรค anime 1.jpg ตามรูปจริงของครูแล้วค่ะ) -->
                 <div class="bento-card card-rank1">
                     <span class="rank-tag">#1</span>
                     <img src="anime 1.jpg" alt="Anime 1">
@@ -35,7 +30,6 @@
                     <p>เรื่องนี้คือที่สุดในใจเพราะ...</p>
                 </div>
 
-                <!-- อันดับ 2 -->
                 <div class="bento-card">
                     <span class="rank-tag">#2</span>
                     <img src="anime 2.jpg" alt="Anime 2">
@@ -43,7 +37,6 @@
                     <p>เรื่องนี้คือที่สุดในใจเพราะ...</p>
                 </div>
 
-                <!-- อันดับ 3 -->
                 <div class="bento-card">
                     <span class="rank-tag">#3</span>
                     <img src="anime 3.jpg" alt="Anime 3">
@@ -51,15 +44,13 @@
                     <p>เรื่องนี้คือที่สุดในใจเพราะ...</p>
                 </div>
 
-                <!-- อันดับ 4 -->
                 <div class="bento-card">
                     <span class="rank-tag">#4</span>
                     <img src="anime 4.jpg" alt="Anime 4">
                     <h3>kamisama hajimemashita</h3>
-                    <p>เรื่องนี้คือที่สุดในใจเพราะ...</p>
+                    <p>เรื่องนี้คือที่สุด in ใจ...</p>
                 </div>
 
-                <!-- อันดับ 5 -->
                 <div class="bento-card">
                     <span class="rank-tag">#5</span>
                     <img src="anime 5.jpg" alt="Anime 5">
@@ -70,65 +61,67 @@
             </div>
         </section>
 
-        <!-- 🎧 ส่วนที่ 3: Top 5 เพลงโปรด (ฝังวิดีโอ YouTube) -->
         <section class="bento-section">
             <h2>🎧 My Top 5 Favorite Songs</h2>
             <div class="bento-grid-songs">
                 
-                <!-- เพลงอันดับ 1 (เปลี่ยนโค้ด Embed ตรง <iframe> ได้เลยค่ะ) -->
                 <div class="song-card">
                     <span class="rank-tag song-rank">#1</span>
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/C40oligg6xE?si=TWNnkD9foLF5k_Ox" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <h4>BOWKYLION - นาฬิกาทราย (sign)</h4>
+                    <div class="song-info">
+                        <h4>BOWKYLION - นาฬิกาทราย (sign)</h4>
+                    </div>
                 </div>
 
-                <!-- เพลงอันดับ 2 -->
                 <div class="song-card">
                     <span class="rank-tag song-rank">#2</span>
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/1VP8JrTHoHo?si=pRhuqpGKMFEdnWs5" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <h4>คุณนายตื่นสาย (Wake up please) - TEMI Feat. KiRANA</h4>
+                    <div class="song-info">
+                        <h4>คุณนายตื่นสาย (Wake up please) - TEMI Feat. KiRANA</h4>
+                    </div>
                 </div>
 
-                <!-- เพลงอันดับ 3 -->
                 <div class="song-card">
                     <span class="rank-tag song-rank">#3</span>
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/x_RYZsOfpKY?si=_I2nnMdPZ3OViqcl" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <h4>ILLIT (아일릿) 'NOT CUTE ANYMORE’</h4>
+                    <div class="song-info">
+                        <h4>ILLIT (아일릿) 'NOT CUTE ANYMORE’</h4>
+                    </div>
                 </div>
 
-                <!-- เพลงอันดับ 4 -->
                 <div class="song-card">
                     <span class="rank-tag song-rank">#4</span>
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/eHHQaoEW30Q?si=y9vxDCAMQmRfVQsv" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <h4>TWICE "THIS IS FOR"</h4>
+                    <div class="song-info">
+                        <h4>TWICE "THIS IS FOR"</h4>
+                    </div>
                 </div>
 
-                <!-- เพลงอันดับ 5 -->
                 <div class="song-card">
                     <span class="rank-tag song-rank">#5</span>
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/M2WTUoy4y6E?si=ib-JjOihRmIZuY65" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    <h4>aespa 에스파 'Dirty Work'</h4>
+                    <div class="song-info">
+                        <h4>aespa 에스파 'Dirty Work'</h4>
+                    </div>
                 </div>
 
             </div>
         </section>
 
-        <!-- ปุ่มสำหรับ JavaScript -->
         <button id="alertBtn">✨ นะโมสามจบแล้วกดสิ ✨</button>
 
     </div>
 
-    <!-- ลิงก์เชื่อมไปหาไฟล์ JS ที่เราจะสร้างเป็นไฟล์ที่สาม -->
     <script src="script.js"></script>
 </body>
 </html>
