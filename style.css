@@ -1,15 +1,15 @@
 /* คุมโทนสีพื้นหลัง ขาว-เหลืองพาสเทล มินิมอล อบอุ่น สบายตา */
 body {
-    background-color: #fdfbf2; /* ปรับพื้นหลังให้ครีมนวลละมุนขึ้นลดความเหลืองสด */
+    background-color: #fdfbf2; 
     color: #333333;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* คุมขนาดหน้าจอ Bento Box ให้บาลานซ์สวยงาม ไม่กว้างเว่อร์ไม่แคบเกิน */
+/* กางขนาดหน้าจอหลักให้กว้างสะใจ 1400px เพื่อรองรับจอเพลงขนาด 70% และรูปอนิเมะทรงสูง */
 .container {
-    max-width: 1600px;
+    max-width: 1400px;
     margin: 50px auto;
     padding: 24px;
 }
@@ -28,9 +28,9 @@ body {
 }
 
 .profile-img {
-    width: 140px;           
-    height: 140px;          
-    border-radius: 15px;    /* สี่เหลี่ยมลบมุมมน 15px ตามใจครูกิ่ง */
+    width: 150px;           
+    height: 150px;          
+    border-radius: 15px;    
     object-fit: cover;      
     border: 4px solid #fff9e6; 
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
@@ -38,7 +38,7 @@ body {
 
 .profile-info h1 {
     margin: 0 0 8px 0;
-    color: #c78d46; /* สีน้ำตาลคาราเมล ดูละมุนตา */
+    color: #c78d46; 
     font-size: 26px;
 }
 
@@ -62,7 +62,7 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* 🎬 ส่วนการ์ดอนิเมะ 5 กล่องเรียงหน้ากระดาน */
+/* 🎬 ส่วนการ์ดอนิเมะ 5 กล่องเรียงหน้ากระดาน (ปรับความสูงรูปตามบรีฟครูกิ่ง) */
 .bento-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr); 
@@ -86,9 +86,10 @@ body {
     box-shadow: 0 12px 28px rgba(180,150,50,0.1);
 }
 
+/* 🟢 ปรับรูปภาพอนิเมะให้สูงงงงงงตาแตกแบบเก็บรายละเอียดโปสเตอร์ครบถ้วน ไม่โดนตัดหัวท้าย */
 .bento-card img {
     width: 100%;
-    height: 220px; 
+    height: 380px; /* ขยายจาก 220px ขึ้นเป็น 380px สูงโปร่งสะใจโชว์ลายเส้นเต็มๆ */
     object-fit: cover; 
     border-radius: 14px;
     margin-top: 25px;
@@ -109,7 +110,7 @@ body {
     line-height: 1.4;
 }
 
-/* ป้ายตัวเลขอันดับ สไตล์โมเดิร์นคลีน */
+/* ป้ายตัวเลขอันดับ */
 .rank-tag {
     position: absolute;
     top: 15px;
@@ -124,7 +125,7 @@ body {
     box-shadow: 0 2px 6px rgba(255, 213, 79, 0.3);
 }
 
-/* 🎧 ส่วนการ์ดเพลงโปรด (ปรับแก้ให้ Bento ดีไซน์สวยแพงแบบเรฟเฟอเรนซ์ต้นฉบับ) */
+/* 🎧 ส่วนการ์ดเพลงโปรด (ปรับสัดส่วน Layout เป็น 70:30) */
 .bento-grid-songs {
     display: grid;
     grid-template-columns: 1fr;
@@ -133,7 +134,7 @@ body {
 
 .song-card {
     background-color: #ffffff;
-    border-radius: 24px; /* ขอบมนโค้งสวยหรู */
+    border-radius: 24px; 
     padding: 24px; 
     display: flex;
     align-items: center;
@@ -149,14 +150,13 @@ body {
     box-shadow: 0 12px 30px rgba(180,150,50,0.08);
 }
 
-/* 📺 หน้าจอวิดีโอ YouTube ทรง Cinema 16:9 แบบโมเดิร์นบ็อกซ์ */
+/* 📺 🟢 หน้าจอวิดีโอ YouTube ปรับให้กินพื้นที่ 70% ของกล่องเพลง ใหญ่สะใจตาแตก! */
 .video-container {
-    width: 380px;   
-    height: 214px;  
-    border-radius: 16px; /* ขอบมนเข้าชุดกัน */
+    flex: 7; /* สัดส่วนเลข 7 (คิดเป็น 70%) */
+    aspect-ratio: 16 / 9; /* ล็อกสัดส่วนให้วิดีโอขยายใหญ่ตามขอบจอโดยที่ภาพไม่เบี้ยว */
+    border-radius: 16px; 
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0,0,0,0.12); 
-    flex-shrink: 0;
     border: 1px solid rgba(0,0,0,0.05);
 }
 
@@ -166,8 +166,9 @@ body {
     border: none;
 }
 
-/* จัดเลย์เอาต์กลุ่มข้อมูลชื่อเพลงและรายละเอียดให้เนี๊ยบคลีน */
+/* 🟢 กลุ่มข้อมูลชื่อเพลง ปรับให้กินพื้นที่ 30% ที่เหลือ */
 .song-info {
+    flex: 3; /* สัดส่วนเลข 3 (คิดเป็น 30%) */
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -175,16 +176,17 @@ body {
 
 .song-card h4 {
     margin: 0;
-    font-size: 20px; 
+    font-size: 22px; /* เพิ่มขนาดฟอนต์ให้เด่นขึ้นรับกับจอเพลงยักษ์ */
     font-weight: bold;
     color: #333;
+    line-height: 1.4;
 }
 
-/* แท็กตัวเลขอันดับของเพลง จัดวางแบบเรียบหรูกึ่งกลางโมเดิร์น */
+/* แท็กตัวเลขอันดับของเพลง */
 .song-rank {
     position: absolute;
     top: 24px;
-    right: 24px; /* ย้ายมาอยู่มุมขวาบนให้ดูคลีนเหมือนแอปเล่นเพลง */
+    right: 24px; 
     left: auto;
     background: #fff8e1;
     border: 1px solid #ffe082;
@@ -192,7 +194,6 @@ body {
     padding: 5px 14px;
     border-radius: 12px;
     font-size: 14px;
-    box-shadow: none;
 }
 
 /* ปุ่มกดทักทาย มินิมอล */
