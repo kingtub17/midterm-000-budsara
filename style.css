@@ -1,157 +1,217 @@
-/* คุมโทนสีพื้นหลัง ขาว-เหลืองพาสเทลตามใจครูกิ่ง */
+/* คุมโทนสีพื้นหลัง ขาว-เหลืองพาสเทล มินิมอล อบอุ่น สบายตา */
 body {
-    background-color: #fefbe9; /* สีครีมเหลืองนวลพาสเทล สบายตา */
-    color: #4a4a4a;
+    background-color: #fdfbf2; /* ปรับพื้นหลังให้ครีมนวลละมุนขึ้นลดความเหลืองสด */
+    color: #333333;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* จัดก้อนเนื้อหาให้อยู่ตรงกลางหน้าจอ ไม่จิ้ดริ้ด ไม่กว้างเกินไป */
+/* คุมขนาดหน้าจอ Bento Box ให้บาลานซ์สวยงาม ไม่กว้างเว่อร์ไม่แคบเกิน */
 .container {
-    max-width: 1400px;
-    margin: 40px auto;
-    padding: 20px;
+    max-width: 1600px;
+    margin: 50px auto;
+    padding: 24px;
 }
 
-/* 👤 ตกแต่งส่วนแนะนำตัวด้านบน */
+/* 👤 ส่วนแนะนำตัวเจ้าของเว็บ (Profile Header) */
 .profile-section {
-    background-color: #ffffff; /* กล่องสีขาวตัดกับพื้นหลังเหลือง */
-    border-radius: 20px;
-    padding: 30px;
+    background-color: #ffffff; 
+    border-radius: 24px;
+    padding: 35px;
     display: flex;
     align-items: center;
-    gap: 30px;
-    box-shadow: 0 8px 24px rgba(229, 220, 172, 0.5); /* เงาสีเหลืองหม่นละมุน */
-    margin-bottom: 40px;
+    gap: 35px;
+    box-shadow: 0 10px 30px rgba(235, 225, 180, 0.35); 
+    margin-bottom: 50px;
+    border: 1px solid rgba(255, 242, 204, 0.6);
 }
 
 .profile-img {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%; /* รูปวงกลม */
-    object-fit: cover;
-    border: 4px solid #fff2cc; /* ขอบสีเหลืองอ่อน */
+    width: 140px;           
+    height: 140px;          
+    border-radius: 15px;    /* สี่เหลี่ยมลบมุมมน 15px ตามใจครูกิ่ง */
+    object-fit: cover;      
+    border: 4px solid #fff9e6; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .profile-info h1 {
-    margin: 0 0 10px 0;
-    color: #d4a373; /* สีน้ำตาลทองอบอุ่น */
+    margin: 0 0 8px 0;
+    color: #c78d46; /* สีน้ำตาลคาราเมล ดูละมุนตา */
+    font-size: 26px;
 }
 
-/* 📦 จัดเซกชันสไตล์ Bento Box */
+.profile-info p {
+    margin: 6px 0;
+    font-size: 15px;
+    color: #666;
+}
+
+/* 📦 เซกชัน Bento Box */
 .bento-section {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .bento-section h2 {
-    color: #dba159;
-    margin-bottom: 20px;
-    border-left: 5px solid #ffeb3b;
-    padding-left: 10px;
+    color: #b57a35;
+    font-size: 22px;
+    margin-bottom: 25px;
+    border-left: 6px solid #ffe082;
+    padding-left: 15px;
+    letter-spacing: 0.5px;
 }
 
-/* ระบบ Grid สำหรับอนิเมะ */
+/* 🎬 ส่วนการ์ดอนิเมะ 5 กล่องเรียงหน้ากระดาน */
 .bento-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(5, 1fr); 
     gap: 20px;
 }
 
-/* การ์ด Bento สไตล์กล่องข้าวญี่ปุ่น */
 .bento-card {
     background-color: #ffffff;
-    border-radius: 16px;
-    padding: 20px;
+    border-radius: 20px;
+    padding: 16px;
     position: relative;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.04);
-    transition: transform 0.2s;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+    border: 1px solid rgba(0,0,0,0.02);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .bento-card:hover {
-    transform: translateY(-5px); /* เวลาเมาส์ชี้แล้วการ์ดลอยขึ้นเบาๆ */
-}
-
-/* ทำให้อันดับ 1 ตัวใหญ่กว่าเพื่อนแบบใน Layout ต้นฉบับ */
-.card-rank1 {
-    grid-column: span 2;
-    background-color: #fffde7; /* ไฮไลต์เหลืองอ่อนพิเศษให้อันดับ 1 */
-    border: 2px solid #fff59d;
+    transform: translateY(-6px); 
+    box-shadow: 0 12px 28px rgba(180,150,50,0.1);
 }
 
 .bento-card img {
     width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-top: 10px;
+    height: 220px; 
+    object-fit: cover; 
+    border-radius: 14px;
+    margin-top: 25px;
+    margin-bottom: 12px;
 }
 
-/* ป้ายแสดงตัวเลขอันดับ */
+.bento-card h3 {
+    margin: 5px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #444;
+}
+
+.bento-card p {
+    margin: 0;
+    font-size: 12px;
+    color: #888;
+    line-height: 1.4;
+}
+
+/* ป้ายตัวเลขอันดับ สไตล์โมเดิร์นคลีน */
 .rank-tag {
     position: absolute;
     top: 15px;
     left: 15px;
-    background-color: #ffe082;
+    background: linear-gradient(135deg, #ffe082, #ffd54f);
     color: #5d4037;
-    padding: 4px 10px;
-    border-radius: 8px;
+    padding: 4px 12px;
+    border-radius: 10px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
+    z-index: 10;
+    box-shadow: 0 2px 6px rgba(255, 213, 79, 0.3);
 }
 
-/* 🎧 ระบบ Grid สำหรับเพลง (กล่องยาวแนวนอนสไตล์การ์ด) */
+/* 🎧 ส่วนการ์ดเพลงโปรด (ปรับแก้ให้ Bento ดีไซน์สวยแพงแบบเรฟเฟอเรนซ์ต้นฉบับ) */
 .bento-grid-songs {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 24px;
 }
 
 .song-card {
     background-color: #ffffff;
-    border-radius: 16px;
-    padding: 15px;
+    border-radius: 24px; /* ขอบมนโค้งสวยหรู */
+    padding: 24px; 
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 35px;
     position: relative;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.02);
+    border: 1px solid rgba(0,0,0,0.02);
+    transition: all 0.3s ease;
 }
 
-/* คุมกรอบวิดีโอ YouTube ไม่ให้เบี้ยว */
+.song-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(180,150,50,0.08);
+}
+
+/* 📺 หน้าจอวิดีโอ YouTube ทรง Cinema 16:9 แบบโมเดิร์นบ็อกซ์ */
 .video-container {
-    width: 200px;
-    height: 110px;
-    border-radius: 8px;
+    width: 380px;   
+    height: 214px;  
+    border-radius: 16px; /* ขอบมนเข้าชุดกัน */
     overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12); 
+    flex-shrink: 0;
+    border: 1px solid rgba(0,0,0,0.05);
 }
 
 .video-container iframe {
     width: 100%;
     height: 100%;
+    border: none;
 }
 
+/* จัดเลย์เอาต์กลุ่มข้อมูลชื่อเพลงและรายละเอียดให้เนี๊ยบคลีน */
+.song-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.song-card h4 {
+    margin: 0;
+    font-size: 20px; 
+    font-weight: bold;
+    color: #333;
+}
+
+/* แท็กตัวเลขอันดับของเพลง จัดวางแบบเรียบหรูกึ่งกลางโมเดิร์น */
 .song-rank {
-    position: static;
-    background-color: #fff59d;
+    position: absolute;
+    top: 24px;
+    right: 24px; /* ย้ายมาอยู่มุมขวาบนให้ดูคลีนเหมือนแอปเล่นเพลง */
+    left: auto;
+    background: #fff8e1;
+    border: 1px solid #ffe082;
+    color: #b57a35;
+    padding: 5px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    box-shadow: none;
 }
 
-/* ปุ่มกดสไตล์มินิมอลเข้ากับเว็บ */
+/* ปุ่มกดทักทาย มินิมอล */
 button {
     display: block;
-    margin: 30px auto 0 auto;
-    background-color: #ffe082;
+    margin: 50px auto 0 auto;
+    background: linear-gradient(135deg, #ffe082, #ffd54f);
     color: #5d4037;
     border: none;
-    padding: 14px 28px;
+    padding: 14px 36px;
     font-size: 16px;
     font-weight: bold;
-    border-radius: 12px;
+    border-radius: 16px;
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(255, 224, 130, 0.4);
-    transition: background 0.2s;
+    box-shadow: 0 6px 20px rgba(255, 224, 130, 0.4);
+    transition: all 0.2s ease;
 }
 
 button:hover {
-    background-color: #ffd54f;
+    transform: scale(1.03);
+    box-shadow: 0 8px 24px rgba(255, 224, 130, 0.5);
 }
