@@ -9,7 +9,7 @@ body {
 
 /* จัดก้อนเนื้อหาให้อยู่ตรงกลางหน้าจอ ไม่จิ้ดริ้ด ไม่กว้างเกินไป */
 .container {
-    max-width: 1000px;
+    max-width: 1400px;
     margin: 40px auto;
     padding: 20px;
 }
